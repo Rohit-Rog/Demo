@@ -12,6 +12,9 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.target>${java.version}</maven.compiler.target>
+    <sonar.projectKey>Rohit-Rog_New</sonar.projectKey>
+    <sonar.organization>rohit-rog</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
   <build>
       <plugins>
