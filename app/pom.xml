@@ -34,7 +34,7 @@
         <configuration>
           <archive>
             <manifest>
-			    <mainClass>MyClass.main</mainClass>
+			    <mainClass>MyClass</mainClass>
 		    </manifest>
           </archive>
         </configuration>
