@@ -3,22 +3,22 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>MyClass</groupId>
   <artifactId>MyClass</artifactId>
-	<version>1.0.0</version>
-	<packaging>jar</packaging>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
   <properties>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <java.version>11</java.version>
+    <java.version>1.8</java.version>
     <resource.delimiter>@</resource.delimiter>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.target>${java.version}</maven.compiler.target>
-    <sonar.projectKey>Rohit-Rog_Demo</sonar.projectKey>
+	<sonar.projectKey>Rohit-Rog_Demo</sonar.projectKey>
     <sonar.organization>rohit-rog</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
   <build>
       <plugins>
-         <plugin>
+          <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
@@ -27,25 +27,18 @@
             <target>${java.version}</target>
           </configuration>
         </plugin>
-	      <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>3.2.0</version>
-          <configuration>
-            <archive>
-		    <manifest>
-			    <mainClass>MyClass</mainClass>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+			    <mainClass>MyClass.main</mainClass>
 		    </manifest>
-		  </archive>
-          </configuration>
-		      <executions>
-		     <execution>
-    <goals>
-        <goal>test-jar</goal>
-    </goals>
-</execution>
-		      </executions>
-        </plugin>
+          </archive>
+        </configuration>
+      </plugin>
 	  </plugins>
 	</build>
 </project>
