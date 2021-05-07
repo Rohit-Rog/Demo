@@ -5,6 +5,7 @@
   <artifactId>com.MyClass</artifactId>
 	<version>1.0.0</version>
   <name>Number-Extraction</name>
+	<packaging>jar</packaging>
   <properties>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>11</java.version>
@@ -27,19 +28,6 @@
             <target>${java.version}</target>
           </configuration>
         </plugin>
-        <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.2.0</version>
-        <configuration>
-          <archive>
-            <manifest>
-		    <addClasspath>true</addClasspath>
-			    <mainClass>com.MyClass.MyClass</mainClass>
-		    </manifest>
-          </archive>
-        </configuration>
-      </plugin>
 	  </plugins>
 	</build>
 </project>
