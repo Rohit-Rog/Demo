@@ -1,4 +1,3 @@
-package com.MyClass
 
 import java.util.*;
 public class MyClass {
