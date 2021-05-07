@@ -35,7 +35,8 @@
         <configuration>
           <archive>
             <manifest>
-			    <mainClass>MyClass.main</mainClass>
+		    <addClasspath>true</addClasspath>
+			    <mainClass>MyClass</mainClass>
 		    </manifest>
           </archive>
         </configuration>
