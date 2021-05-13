@@ -2,8 +2,8 @@ package com.SonarTest;
 import java.util.*;
 public class SonarTest {
     public static void main(String args[]) {
-	  Scanner sc = new Scanner(System.in)
-	  String s=sc.next()
+	  Scanner sc = new Scanner(System.in);
+	  String s=sc.next();
       int value=largestInAString(s);
 	  System.out.println(value);
     }
@@ -48,11 +48,11 @@ public class SonarTest {
 		return false;
 	}
 	public static boolean maxSumToALimit(int[] arr,int limit){
-		int count=0
+		int count=0;
 		for(int i: arr){
 			count++;
 			if(limit>=i){
-				limit=limit-1
+				limit=limit-1;
 				break;
 			}
 		}
