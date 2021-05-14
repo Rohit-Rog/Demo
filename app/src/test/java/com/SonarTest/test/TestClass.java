@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import com.SonarTest.SonarTest;
 
-public class Test{
+public class TestClass{
 
 @Test
 public void palindromeCheck(){
