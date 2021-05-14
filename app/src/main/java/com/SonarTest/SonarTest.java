@@ -1,13 +1,7 @@
 package com.SonarTest;
 import java.util.*;
 public class SonarTest {
-    public static void main(String args[]) {
-	  Scanner sc = new Scanner(System.in);
-	  String s=sc.next();
-      int value=largestInAString(s);
-	  System.out.println(value);
-    }
-	public static int largestInAString(String s){
+      public static int largestInAString(String s){
       s=s.replaceAll("\\p{Punct}"," ");
       String[] s_arr=s.split("\\s+");
       int largest=0;
@@ -42,7 +36,7 @@ public class SonarTest {
 		for(int i=s.length()-1; i>=0; i--){
 			reversed+=s.charAt(i);
 		}
-		if(reversed==s){
+		if(reversed.equalsIgnoreCase(s)){
 			return true;
 		}
 		return false;
