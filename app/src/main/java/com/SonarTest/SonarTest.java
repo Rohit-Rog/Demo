@@ -19,6 +19,10 @@ public class SonarTest {
               continue;
           }
       }
+      if(intArr.size()==1){
+        largest=intArr.get(0);
+      }
+      else{
       for(int i=0;i<intArr.size();i++){
           if(i<intArr.size()-1){
           if(intArr.get(i)<intArr.get(i+1)){
@@ -28,6 +32,7 @@ public class SonarTest {
               largest=intArr.get(i);
           }
           }
+      }
       }
       return largest;
 	}
