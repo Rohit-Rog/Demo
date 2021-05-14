@@ -11,10 +11,14 @@ public class TestClass{
 
 @Test
 public void palindromeCheck(){
-	assertTrue(SonarTest.checkPalindrome("naran"));
-	assertFalse(SonarTest.checkPalindrome("Naran"));
+	assertTrue(SonarTest.checkPalindrome("Naran"));
+	assertFalse(SonarTest.checkPalindrome("Narine"));
 }
-
+@Test
+public void largestNumInAStringCheck(){
+	assertEquals(11000,SonarTest.largestInAString("Hello 99, I am 10875! You have 11000 tasks to complete within 74 secs!"));
+	assertFalse(SonarTest.largestInAString("Hello 99, I am 10875!")==99);
+}
 @Test
 public void arrayCheck(){
 	int[] arr=new int[]{1,2,3,5};
